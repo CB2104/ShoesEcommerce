@@ -365,6 +365,12 @@ label{
     padding: 15px;
     font-weight: 600;
     cursor: pointer;
+    background-color: white;
+}
+.nsButton:hover{
+    background-color: black;
+    color: white;
+    border: 1px solid lightgray;
 }
 /*---------------FOOTER-----------*/
 
@@ -407,14 +413,27 @@ footer{
     padding: 5px;
     background-color: black;
     color: white;
+    transition-duration: 0.5s ease-out;
+}
+.fButton:hover{
+    background-color: white;
+    color: black;   
 }
 .fIcons{
     display: flex;
 }
+.fIcons a{
+    transition: transform 0.5s ease;
+}
 .fIcon{
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
+    width: 25px;
+    height: 25px;   
+    margin-right: 5px;
+    color: black;
+}
+.fIcons a:hover{
+    color: lightslategray;
+    transform: translateY(-3px) ;
 }
 .copyright{
     font-weight: 300;
